@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>香山: 开源高性能 RISC-V 处理器</title>
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+</head><body>
+
+<br>
+<font face="Helvetica, sans-serif, Arial">
+      <table valign="center" align="center" border="0" cellpadding="0" cellspacing="0" width="0">
+        <tbody><tr> 
+          <td>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+        <tr>
+	    <td align="center" width="0%">&nbsp;</td>
+	    <td align="center" width="100%&quot;">
+		<div style="text-align: center;">
+		<h2><span style="color: rgb(0, 0, 255);"><font face="Helvetica, sans-serif, Arial">XiangShan: 一款开源的高性能 RISC-V 处理器</font></span><span style="color: rgb(0, 0, 255);"><br>
+		    <br>
+		</span></h2>
+		</div>
+		<p align="center" ><strong>2021.6.25 周五&#160;<br>
+		    14:00 PM - 17:00 PM&#160;<br>
+		    中国，上海</strong></p></td>
+	    <td align="center" width="0%">
+		<img src="assets/logo.png" alt="XiangShan logo" height="260" width="353"><br></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- programe start -->
+<table valign="center" align="center" border="0" cellpadding="0" cellspacing="0" width="0">
+	<tbody><tr>
+	    <td align="center" width="10%">&nbsp;</td>
+	    
+<td width="80%">
+<br>
+<p>&nbsp;</p>
+<h3>简介</h3>
+<hr>
+<a name="main"></a>香山是一款开源的高性能 RISC-V 处理器，基于 Chisel 硬件设计语言实现，支持 RV64GC 指令集。在香山处理器的开发过程中，团队使用了包括 Chisel、Verilator 等在内的大量开源工具，实现了差分验证、仿真快照、RISC-V 检查点等处理器开发的基础工具，建立起了一套包含设计、实现、验证等在内的基于开源工具的处理器前端敏捷开发流程。
+<p>在本次 Tutorial 中，开发团队将详细介绍香山处理器的基础开发流程，通过实际动手操作向观众展示处理器的敏捷开发流程及配套基础设施工具的使用方法。</p>
+<p><strong>香山开源网址：</strong> <a href="https://github.com/OpenXiangShan/XiangShan">https://github.com/OpenXiangShan/XiangShan</a>.</p>
+<p><strong>Tutorial 报名网址：</strong> <a href="https://www.bagevent.com/event/7497950">https://www.bagevent.com/event/7497950</a>.</p>
+<p>报名本次Tutorial需要同时报名RISC-V中国峰会。如您还未报名RISC-V中国峰会，请先报名RISC-V中国峰会（第三轮补充报名通道：</strong> <a href="https://www.bagevent.com/event/7534263">https://www.bagevent.com/event/7522967</a>）。因疫情防控需要，未通过RISC-V中国峰会报名的参会者很有可能无法进入校园。</p>
+
+<p>&nbsp;</p>
+<h3>示例视频</h3>
+<hr>
+<!-- <video src="1.mp4" width="640" height="480" controls preload></video> -->
+<img src="assets/Boot.gif" width="640" height="360">
+
+<p>&nbsp;</p>
+<h3 ><strong>主题 </strong></h3>
+<hr>
+<p><strong>本次 Tutorial 将会包含以下主题：</strong></p>
+基础部分
+<ol>
+  <li type="circle">获取香山及相关工具链 </li>
+  <li type="circle">生成香山核单核的 Verilog 代码 </li>
+  <li type="circle">生成香山核多核的 Verilog 代码 </li>
+  <li type="circle">香山核 Chisel 框架和硬件模块层次介绍 </li>
+  <li type="circle">构建香山核基础仿真环境 </li>
+</ol>
+进阶部分
+<ol>
+  <li type="circle">香山核仿真调试进阶介绍 </li>
+  <ol>
+    <li type="square">差分测试框架</li>
+    <li type="square">日志相关工具</li>
+    <li type="square">波形相关工具</li>
+    <li type="square">快照相关工具</li>
+  </ol>
+  <li type="circle">搭建 ChiselTest 单元测试环境</li>
+  <li type="circle">搭建香山核的性能评估与分析环境</li>
+</ol>
+<p>&nbsp;</p>
+
+<h3 ><strong>听众</strong></h3>
+<hr>
+<p><strong>目标听众:</strong> 对处理器设计、敏捷开发和验证感兴趣的开发者, 对 RISC-V 指令集感兴趣的开发者等</p>
+<p><strong>预备知识:</strong> 体系结构基础知识, Linux 基础知识</p>
+<p><strong>注意：</strong>请观众带上可以联网并使用SSH客户端的设备，动手实践环节需要连接我们提供的服务器进行。为了应对新冠肺炎可能的各种突然疫情，我们已经提交了五级防疫预案，参会人数会根据疫情动态等级进行及时调整。请留意通知信息。</p>
+<p>&nbsp;</p>
+
+<h3 ><strong>会议相关报告</strong></h3>
+<hr>
+<img src="assets/report.png" width="800" height="450">
+
+<p>&nbsp;</p>
+<h3 ><strong>致谢 & 招募</strong></h3>
+<hr>
+<p>感谢北京微核芯科技有限公司为香山处理器第一期提供产业经验、联合完成结构设计及物理设计</p>
+<p>招募香山处理器二期联合开发合作伙伴，已加入企业：</p>
+<img src="assets/vcore-mini.png" width="229" height="65"> &nbsp;&nbsp; <img src="assets/bytedance.png" width="176" height="46"> &nbsp;&nbsp; <img src="assets/eswin.png" width="140" height="34"> &nbsp;&nbsp; <img src="assets/youxi.png" width="146" height="42">
+<p>欢迎更多伙伴加入！  联系人：李迪 13811881360</p>
+
+<p>&nbsp;</p>
+<h3 ><strong>活动合作方</strong></h3>
+<hr>
+<ol>
+  <img src="assets/vcore.png" width="200" height="112">
+</ol>  
+
+<!-- <p>&nbsp;</p>
+<h3 ><strong>Presenters</strong></h3>
+<hr>
+<p><img width="149" height="210" src="baoyg.png" align="left" hspace="12" ><a href="http://acs.ict.ac.cn/baoyg/" ><u>Yungang Bao</u></a> is a professor of the State Key Laboratory of Computer Architecture, Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS). He is the executive director of Research Center for Advanced Computer System (ACS) . He received his BS degree in computer science from Nanjing University in 2003, and his PhD degree in computer engineering from ICT, CAS in 2008, supervised by Prof. Jianping Fan and Prof. Mingyu Chen. During his PhD study, he led the Hybrid Hardware/Software Memory Trace Tool (HMTT) project. During 2010-2012, he did postdoc research in Department of Computer Science, Princeton University, working with Prof. Kai Li on the Princeton Application Repository for Shared-Memory Computers (PARSEC) project. He was the winner of CCF-Intel Young Faculty Researcher Program of the year for 2013.&#160; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img width="152" height="210" src="index_wps721E.tmp.png" align="left" hspace="12" ><a href="https://sashimi-yzh.github.io/" ><u>Zihao Yu</u></a> is a PhD candidate of the Institute of Computing Technology, Chinese Academy of Sciences. He is supervised by Prof. Ninghui Sun and Prof. Yungang Bao. He received his B.S. degree in computer science from Nanjing University in 2014. His research interests include computer architecture and operating systems. He is the leader of the Labeled RISC-V project. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img width="155" height="210" src="wanghuizhe.png" align="left" hspace="12" >Huizhe Wang is a Master candidate of the Institute of Computing Technology, Chinese Academy of Sciences. He is supervised by Prof. Yungang Bao. He received his B.S. degree in computer science from Nanjing University in 2017. His research interests include computer architecture and compiling techniques. He participates in the Labeled RISC-V  project.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p> -->
+<!-- <h3 ><strong>Preview</strong></h3>
+<hr>
+<p><img src="Data17/1.png" width="600" height="451"><img src="Data17/2.png" width="600" height="451"></p>
+<p><img src="Data17/7.png" width="600" height="451"><img src="Data17/8.png" width="600" height="451"></p>
+<p><img src="Data17/nohype.gif" width="600" height="450"><img src="Data17/4.png" width="600" height="450"></p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p> Number of visitors :
+  <script src="http://count.knowsky.com/count1/count.asp?id=305679&sx=1&ys=43" language="JavaScript" charset="gb2312"></script>
+</p> -->
+<!-- Powered by http://www.knowsky.com -->
+
+	    <!-- <td width="10%">&nbsp;</td>
+	</tr>
+</tbody></table>
+</td></tr></tbody></table></font>
+<script type="text/javascript">
+swfobject.registerObject("FLVPlayer");
+</script>
+</body></html> -->
