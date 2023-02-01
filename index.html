@@ -20,13 +20,16 @@
 	    <td align="center" width="0%">&nbsp;</td>
 	    <td align="center" width="100%&quot;">
 		<div style="text-align: center;">
-		<h2><span style="color: rgb(0, 0, 255);"><font face="Helvetica, sans-serif, Arial">[Under Construction] XiangShan: An Open Source High Performance RISC-V Processor and Infrastructure for Architecture Research</font></span><span style="color: rgb(0, 0, 255);"><br>
+      <h2><span style="color: rgb(255, 0, 0);"><font face="Helvetica, sans-serif, Arial">[Under Construction]</font></span><span style="color: rgb(255, 0, 0);"><br>
+		    <br>
+		</span></h2>
+		<h2><span style="color: rgb(0, 0, 255);"><font face="Helvetica, sans-serif, Arial">XiangShan: An Open Source High Performance RISC-V Processor and Infrastructure for Architecture Research</font></span><span style="color: rgb(0, 0, 255);"><br>
 		    <br>
 		</span></h2>
 		</div>
-		<p align="center" ><strong>2023.X.X &#160;<br>
-		    XX:00 PM - XX:00 PM&#160;<br>
-		    XX，XX</strong></p></td>
+		<p align="center" ><strong>2023.3.25 &#160;<br>
+		    Morning&#160;<br>
+		    Vancouver, Canada</strong></p></td>
 	    <td align="center" width="0%">
 		<img src="assets/logo.png" alt="XiangShan logo" height="260" width="353"><br></td>
         </tr>
@@ -41,71 +44,54 @@
 <td width="80%">
 <br>
 <p>&nbsp;</p>
-<h3>简介</h3>
+<h3>Abstract</h3>
 <hr>
-<a name="main"></a>香山是一款开源的高性能 RISC-V 处理器，基于 Chisel 硬件设计语言实现，支持 RV64GC 指令集。在香山处理器的开发过程中，团队使用了包括 Chisel、Verilator 等在内的大量开源工具，实现了差分验证、仿真快照、RISC-V 检查点等处理器开发的基础工具，建立起了一套包含设计、实现、验证等在内的基于开源工具的处理器前端敏捷开发流程。
-<p>在本次 Tutorial 中，开发团队将详细介绍香山处理器的基础开发流程，通过实际动手操作向观众展示处理器的敏捷开发流程及配套基础设施工具的使用方法。</p>
-<p><strong>香山开源网址：</strong> <a href="https://github.com/OpenXiangShan/XiangShan">https://github.com/OpenXiangShan/XiangShan</a>.</p>
-<p><strong>Tutorial 报名网址：</strong> <a href="https://www.bagevent.com/event/7497950">https://www.bagevent.com/event/7497950</a>.</p>
-<p>报名本次Tutorial需要同时报名RISC-V中国峰会。如您还未报名RISC-V中国峰会，请先报名RISC-V中国峰会（第三轮补充报名通道：</strong> <a href="https://www.bagevent.com/event/7534263">https://www.bagevent.com/event/7522967</a>）。因疫情防控需要，未通过RISC-V中国峰会报名的参会者很有可能无法进入校园。</p>
+<a name="main"></a>Over the past decade, agile and open-source hardware has gained increasing attentions in both academia and industry. In 2019, the SIGARCH Visioning Workshop “Agile and Open Hardware for Next-Generation Computing” in conjunction with ISCA invited eleven experts to present their visions on this direction. We believe that open-source hardware design, and more importantly, free and open development infrastructure, has the opportunity to bring more convenience to architecture research and stimulate innovations.
+<p>In this tutorial, we will present our efforts on XiangShan project. XiangShan is an open-source, industry-competitive, high performance RISC-V processor. It has raised the performance ceiling of publicly accessible processors and set the competitive groundwork for future computer architecture research. Behind the processor itself, there is also an agile development platform called Minjie that integrates a broad set of development tools as infrastructure. We will demonstrate how XiangShan, together with Minjie, helps researchers realize their innovative ideas agilely and obtain convincing evaluation results.</p>
+<p></p>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p>
 <h3>示例视频</h3>
 <hr>
 <!-- <video src="1.mp4" width="640" height="480" controls preload></video> -->
-<img src="assets/Boot.gif" width="640" height="360">
+<!-- <img src="assets/Boot.gif" width="640" height="360"> -->
 
 <p>&nbsp;</p>
-<h3 ><strong>主题 </strong></h3>
+<h3 ><strong>What will be covered? </strong></h3>
 <hr>
-<p><strong>本次 Tutorial 将会包含以下主题：</strong></p>
-基础部分
 <ol>
-  <li type="circle">获取香山及相关工具链 </li>
-  <li type="circle">生成香山核单核的 Verilog 代码 </li>
-  <li type="circle">生成香山核多核的 Verilog 代码 </li>
-  <li type="circle">香山核 Chisel 框架和硬件模块层次介绍 </li>
-  <li type="circle">构建香山核基础仿真环境 </li>
-</ol>
-进阶部分
-<ol>
-  <li type="circle">香山核仿真调试进阶介绍 </li>
+  <li type="circle">Introduction to XiangShan project </li>
   <ol>
-    <li type="square">差分测试框架</li>
-    <li type="square">日志相关工具</li>
-    <li type="square">波形相关工具</li>
-    <li type="square">快照相关工具</li>
+    <li type="square">In June 2020, we launched XiangShan project. We have developed two major generations of codenamed YQH and NH respectively. The latest version of XiangShan processor achieves the highest performance of open-source RISC-V processors to the best of our knowledge. This topic will also cover XiangShan tape-out status, performance evaluation, future roadmap, etc.</li>
   </ol>
-  <li type="circle">搭建 ChiselTest 单元测试环境</li>
-  <li type="circle">搭建香山核的性能评估与分析环境</li>
+  <p>&nbsp;</p>
+  <li type="circle">Introduction to micro-architecture and design concept of XiangShan processor</li>
+  <ol>
+    <li type="square">We will talk about micro-architecture design of XiangShan processor. XiangShan is a superscalar out-of-order RISC-V processor with RV64GCBK ISA support. It features high-throughput frontend with advanced branch predictor, six-width aggressive out-of-order execution engine, high-bandwidth load/store unit and highly configurable cache system. Written in Chisel, a high-level hardware description language, XiangShan also achieves high readability and maintainability.</li>
+  </ol>
+  <p>&nbsp;</p>
+  <li type="circle">Demonstration of simulation flow and FPGA prototype of XiangShan processor</li>
+  <ol>
+    <li type="square">We have established a comprehensive workflow to simulate XiangShan processor and do prototype on FPGA. In this part, we will perform a practical demonstration, including argument details and key points to pay attention to.</li>
+  </ol>
+  <p>&nbsp;</p>
+  <li type="circle">Introduction to infrastructure for XiangShan development</li>
+  <ol>
+    <li type="square">We will introduce the development infrastructure of XiangShan processor, also known as Minjie platform. Minjie is open sourced as well. It includes a series of tools that can accelerate the process of hardware development, functional verification, and performance evaluation. We will first talk about the principles and instructions of Minjie toolsets, and then demonstrate how to employ these tools to help quickly develop XiangShan processor.</li>
+  </ol>
+  <p>&nbsp;</p>
+  <li type="circle">Typical cases sharing of modification and experimentation on XiangShan</li>
+  <ol>
+    <li type="square">We will present some typical cases for XiangShan development. For example, how to add an instruction, how to add a peripheral device and how to re-configure cache structure. Based on XiangShan and Minjie platform, many architectural works can be reproduced and accelerate the interactions between academia and industry.</li>
+  </ol>
 </ol>
 <p>&nbsp;</p>
 
-<h3 ><strong>听众</strong></h3>
+<h3 ><strong>Attendee Requirements</strong></h3>
 <hr>
-<p><strong>目标听众:</strong> 对处理器设计、敏捷开发和验证感兴趣的开发者, 对 RISC-V 指令集感兴趣的开发者等</p>
-<p><strong>预备知识:</strong> 体系结构基础知识, Linux 基础知识</p>
-<p><strong>注意：</strong>请观众带上可以联网并使用SSH客户端的设备，动手实践环节需要连接我们提供的服务器进行。为了应对新冠肺炎可能的各种突然疫情，我们已经提交了五级防疫预案，参会人数会根据疫情动态等级进行及时调整。请留意通知信息。</p>
+<p><strong>Target:</strong> Researchers on micro-architecture, high performance processor design, agile development and verification, etc.</p>
+<p><strong>No prior experience with XiangShan/RISC-V/Chisel is necessary. </strong> 
 <p>&nbsp;</p>
-
-<h3 ><strong>会议相关报告</strong></h3>
-<hr>
-<img src="assets/report.png" width="800" height="450">
-
-<p>&nbsp;</p>
-<h3 ><strong>致谢 & 招募</strong></h3>
-<hr>
-<p>感谢北京微核芯科技有限公司为香山处理器第一期提供产业经验、联合完成结构设计及物理设计</p>
-<p>招募香山处理器二期联合开发合作伙伴，已加入企业：</p>
-<img src="assets/vcore-mini.png" width="229" height="65"> &nbsp;&nbsp; <img src="assets/bytedance.png" width="176" height="46"> &nbsp;&nbsp; <img src="assets/eswin.png" width="140" height="34"> &nbsp;&nbsp; <img src="assets/youxi.png" width="146" height="42">
-<p>欢迎更多伙伴加入！  联系人：李迪 13811881360</p>
-
-<p>&nbsp;</p>
-<h3 ><strong>活动合作方</strong></h3>
-<hr>
-<ol>
-  <img src="assets/vcore.png" width="200" height="112">
-</ol>  
 
 <!-- <p>&nbsp;</p>
 <h3 ><strong>Presenters</strong></h3>
